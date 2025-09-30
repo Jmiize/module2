@@ -9,7 +9,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubunto-latest
+    runs-on: [self-hosted, linux, x64]
 
     steps:
       - name: Check out code
@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           puython-version: "3.11"
-          
+
       - name: Intall dependencies
         run: |
           python -m pip install --upgrade pip
