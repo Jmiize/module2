@@ -18,7 +18,8 @@ jobs:
       - name: Set up python
         uses: actions/setup-python@v5
         with:
-          puython-version: "3.11"
+          python-version: "3.11"
+          check-latest: true
 
       - name: Intall dependencies
         run: |
